@@ -12,7 +12,7 @@ const searchStyle = {
 const Navbar = () => {
   return (
     <>
-    <div className='grid grid-cols-3  border-2 h-[80px]'>
+    <div className='grid grid-cols-3 h-[80px]'>
         <div className=' m-auto w-2'>
             <p className='font-bold text-[23px]'>ARTSY</p>
         </div>
