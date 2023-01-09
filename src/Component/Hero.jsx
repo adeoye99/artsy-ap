@@ -11,7 +11,7 @@ const Hero = () => {
          <h2 className='border-1 text-[60px] font-semibold'> Photography is poetry <br/>& beautiful untold stories</h2>
     </div>
        <div className='w-100 mx-auto mt-10'>
-         <p className='border-1  font-semibold'>Flip through more than 10,000 vintage shots, old photograghs, historic <br/> images and captures seamlessly in one place. Register to get top access.</p>
+         <p className='border-1  font-semibold'> through more than 10,000 vintage shots, old photograghs, historic <br/> images and captures seamlessly in one place. Register to get top access.</p>
        </div>
       <div className='flex gap-3 mt-[100px] overflow-auto whitespace-nowrap scrollbar-hide md:scrollbar-default'>
         <img className='h-[250px] w-50 my-auto' src = { pic3 } alt = "pics"/>
