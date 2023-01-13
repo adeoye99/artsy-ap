@@ -1,0 +1,1 @@
+export {default as pic1} from "pic1.jpg"

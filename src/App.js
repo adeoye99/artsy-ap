@@ -5,7 +5,9 @@ import Hero from './Component/Hero';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route , Routes  } from 'react-router-dom';
 import Home from './Pages/Home';
-
+import Drop from "./Pages/Drop"
+import Auction from "./Pages/Auction"
+import Marketplace from "./Pages/Marketplace"
 
 function App() {
   return (
@@ -14,8 +16,9 @@ function App() {
         <Navbar/>
         <Routes>
            <Route path= "/" element ={<Home/>}/>
-           <Route path= "/auction" element ={<Hero/>}/>
-           <Route path= "/drop" element ={<Hero/>}/>
+           <Route path= "/auction" element ={<Auction/>}/>
+           <Route path= "/drop" element ={<Drop/>}/>
+           <Route path = "/marketplace" element = {<Marketplace/>} />
         </Routes>
       </Router>
       
