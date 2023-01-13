@@ -10,7 +10,62 @@ import { FaBars } from "react-icons/fa";
 const searchStyle = {
   fontSize : "18px"
 }
+const NavLinkdetails = [
+  {
+    name : "Home",
+    link : "/"
 
+  },
+  { 
+    name : "Marketplace",
+    link : "marketplace"
+
+  },
+  {
+    name: "Auction",
+    link: "auction"
+    
+  },
+  {
+    name : "Drop",
+    link: "drop"
+  }
+
+
+]
+     
+
+
+
+const NavLink = ({link , name}) =>{
+  return (
+
+    <Link to = {link}>
+          <p >
+            {name}
+          </p>
+        </Link>
+
+
+  )
+
+
+}
+
+const sidebarLink = ({link , name }) =>{
+  return (
+
+    <Link to = {link}>
+          <p>
+            {name}
+          </p>
+    </Link>
+
+
+  )
+
+
+}
 const Navbar = () => {
   return (
     <>
@@ -24,23 +79,44 @@ const Navbar = () => {
              />          
         </div>
        <div className='hidden md:grid grid-cols-4 items-center'>
-        <Link to = "/">
-          <p  >
-            Home
-          </p>
-        </Link>
-        <Link to = "marketplace">
-             <p >Marketplace</p>
-        </Link>
+        {
+          NavLinkdetails.map((item)=>{
+            return(
+
+              <NavLink
+                name = {item.name}
+                link = {item.link}
+              />
+            )
+          })
+        }
+       </div> 
+          {/* mobile navbar */}
+       <ul className = "h-full absolute bg-white  md:hidden">
+        <li>
+           <Link to = "/">
+             Home
+           </Link>
+        </li>
+        <li>
+           <Link to = "marketplace">
+              Marketplace
+          </Link>
+        </li>
+        
         <Link to= "auction" >
-             <p> Auction </p>
+             <li> Auction</li> 
         </Link>
         <Link to= "drop">
-              <p > Drop </p>
+              <li> Drop </li>
         </Link>
            
             
-       </div> 
+        <li>
+
+        </li>
+
+       </ul>
        <div className = "hidden md:grid grid-cols-3 items-center mx-auto gap-7" >
         <div >
            <FiSearch 
