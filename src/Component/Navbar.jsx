@@ -1,8 +1,10 @@
-import React from 'react';
+import React , { useState } from 'react';
 import { Link } from "react-router-dom"
 import { FiSearch } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { HiOutlineBell } from "react-icons/hi";
+import { HiOutlineXMark } from "react-icons/hi2";
+
 import { FaBars } from "react-icons/fa";
 
 
@@ -52,13 +54,13 @@ const NavLink = ({link , name}) =>{
 
 }
 
-const sidebarLink = ({link , name }) =>{
+const SidebarLink = ({link , name }) =>{
   return (
 
     <Link to = {link}>
-          <p>
+          <h1  className='mt-[100px] text-left pl-[50px] text-lg font-200'>
             {name}
-          </p>
+          </h1>
     </Link>
 
 
@@ -67,16 +69,27 @@ const sidebarLink = ({link , name }) =>{
 
 }
 const Navbar = () => {
+
+  const [open , setOpen ] = useState(false)
   return (
     <>
-    <div className='grid grid-cols-3 h-[80px]'>
+    <div className='grid grid-cols-3 h-[80px] '>
         <div className=' m-auto w-2'>
-            <p className='font-bold text-[23px]'>ARTSY</p>
+            <p className='z-50 md:font-bold text-[23px]'>ARTSY</p>
         </div>
-        <div className = "absolute right-4 top-6 md:hidden">
+        <div onClick = {()=>{setOpen(!open)}} className = "absolute z-50 right-4 top-6 md:hidden">
+          {
+            open ?
+            <HiOutlineXMark
+              size = "25px"
+             />
+             :
+             
              <FaBars
                size = "25px" 
-             />          
+             />
+          }
+                       
         </div>
        <div className='hidden md:grid grid-cols-4 items-center'>
         {
@@ -92,30 +105,16 @@ const Navbar = () => {
         }
        </div> 
           {/* mobile navbar */}
-       <ul className = "h-full absolute bg-white  md:hidden">
-        <li>
-           <Link to = "/">
-             Home
-           </Link>
-        </li>
-        <li>
-           <Link to = "marketplace">
-              Marketplace
-          </Link>
-        </li>
-        
-        <Link to= "auction" >
-             <li> Auction</li> 
-        </Link>
-        <Link to= "drop">
-              <li> Drop </li>
-        </Link>
-           
-            
-        <li>
-
-        </li>
-
+       <ul className = {`h-full w-50 absolute bg-white w-[50%] duration-500 md:hidden ${ open ? "left-0" : "left-[-100%]" } `}>
+         <li onClick = {() => {setOpen(!open)}} className=' hover:bg-gray-100'>
+          {
+           NavLinkdetails.map((item)=>{
+            return(
+              <SidebarLink name = {item.name} link = {item.link}/>
+            )
+             })
+         }
+         </li>
        </ul>
        <div className = "hidden md:grid grid-cols-3 items-center mx-auto gap-7" >
         <div >
