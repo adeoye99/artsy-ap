@@ -110,7 +110,10 @@ const Navbar = () => {
           {
            NavLinkdetails.map((item)=>{
             return(
-              <SidebarLink name = {item.name} link = {item.link}/>
+              <SidebarLink
+               name = {item.name} 
+               link = {item.link}
+               />
             )
              })
          }
