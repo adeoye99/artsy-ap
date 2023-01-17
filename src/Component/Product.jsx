@@ -14,7 +14,7 @@ const Product = ({title ,img , about}) => {
         </div>
         <div className=' text-left w-full md:text-left mr-[190px] md:px-[80px]'>
             <h1 className='text-[10px] w-full flex md:font-semibold text-3xl' >The Boolean Egyptian</h1>
-            <p className='text-sm flex w-50 md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
+            <p className='text-sm flex w-50 pl-4 md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
             <div>
               <div>
 
@@ -31,8 +31,8 @@ const Product = ({title ,img , about}) => {
       <div className=' md:grid grid-cols-2 mt-[100px] py-[100px] border-t-2'>
        
         <div className='text-left w-full md:px-[80px]'>
-            <h1 className='font-semibold text-3xl' >The Boolean Egyptian</h1>
-            <p className=' md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
+            <h1 className='pl-3 md:font-semibold text-3xl' >The Boolean Egyptian</h1>
+            <p className=' pl-4 md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
             <div>
               <div>
 
@@ -54,9 +54,9 @@ const Product = ({title ,img , about}) => {
         <div className=''>
             <img className='float-right' src = {product3}/>
         </div>
-        <div className=' w-full md:text-left mr-[190px] md:px-[80px]'>
-            <h1 className='text-[10px] w-full flex md:font-semibold text-3xl' >The Boolean Egyptian</h1>
-            <p className='text-sm flex w-50 md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
+        <div className='w-full md:text-left mr-[190px] md:px-[80px]'>
+            <h1 className='pl-3 text-[10px] w-full flex md:font-semibold text-3xl' >The Boolean Egyptian</h1>
+            <p className='pl-3 text-sm flex w-50 md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
             <div>
               <div>
 
