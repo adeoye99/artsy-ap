@@ -30,12 +30,17 @@ const Slider = () =>{
                    <h1 className="text-white text-[25px] text-left border-b-1 border-yellow py-2 ">See Upcoming Aunction and Exhibition</h1>
                  </div>
 
-                 <div style = {{ backgroundImage : `url(${product1})`}}  className = "h-[500px] w-[100%] mx-auto  bg-center bg-cover opacity-100 mt-2 relative">  
-                   <div>
+                 <div style = {{ backgroundImage : `url(${product1})`}}  className = "grid grid-cols-2 h-[500px] w-[100%] mx-auto  bg-center bg-cover opacity-100 mt-2 relative">  
+                   <div className="grid grid-cols-2 ">
+                      <div className="items-center">
+                          <h1 className="text-white">01</h1>
+                       </div>
+                       <div>
                        <h1 className="text-white ">MONALISA REDEFINED <br/> IN STYLE </h1>2
                        <p>Start on : 08:00 GTS . Monday </p>
                        <p>GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.</p>
-
+                       </div>
+                      
                    </div>
 
                    <div className="absolute right-[40px] bottom-[30px] flex flex-row gap-6 items-center ">
@@ -53,10 +58,7 @@ const Slider = () =>{
                   
                        <MdOutlineArrowBackIos
                          size = "35px"
-                
                        /> 
-                    
-            
                        <MdOutlineArrowForwardIos
                          size = "35px"
                        /> 
