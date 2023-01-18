@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "bellefair" : [ '"Bellefair"' , "cursive" ]
+      }
+    },
   },
   plugins: [
     require('tailwind-scrollbar-hide')
