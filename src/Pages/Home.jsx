@@ -5,14 +5,14 @@ import Slider from '../Component/Slider'
 import Options from "../Component/Options";
 
 
-const optionDetails = [
+const OptionDetails = [
 
   {
      name:  "Explore Marketplace"
 
   },
   {
-     name : "See aunction"
+     name : "See Aunction"
 
 
   }
@@ -23,8 +23,20 @@ const Home = () => {
         <Hero/>      
         <Product/>
         <Slider/>
-        <div className='mt-[30px]'>
-           <Options/>
+        <div className='my-[100px]'>
+
+          {
+           OptionDetails.map((item) =>{
+            return (
+            <Options
+              name =  {item.name}
+            
+            />
+            )
+           })
+
+          }
+          
         </div>
        
 
