@@ -3,6 +3,7 @@ import Hero from '../Component/Hero';
 import Product from '../Component/Product';
 import Slider from '../Component/Slider'
 import Options from "../Component/Options";
+import CreatorOfWeek from '../Component/CreatorOfWeek';
 
 
 const OptionDetails = [
@@ -24,7 +25,6 @@ const Home = () => {
         <Product/>
         <Slider/>
         <div className='my-[100px]'>
-
           {
            OptionDetails.map((item) =>{
             return (
@@ -38,6 +38,7 @@ const Home = () => {
           }
           
         </div>
+        <CreatorOfWeek/>
        
 
     </>
