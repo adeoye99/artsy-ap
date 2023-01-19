@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import Drop from "./Pages/Drop"
 import Auction from "./Pages/Auction"
 import Marketplace from "./Pages/Marketplace"
+import React , {lazy ,  Suspense} from "react"
 
 function App() {
   return (
