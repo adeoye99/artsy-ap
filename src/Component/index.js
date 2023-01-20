@@ -1,1 +1,1 @@
-export {default as CreatorOfWeek } from "./CreatorsOfWeek"
+export { default as CreatorOfWeek } from "./CreatorsOfWeek"

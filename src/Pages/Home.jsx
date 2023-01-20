@@ -10,7 +10,7 @@ const OptionDetails = [
 
   {
      name:  "Explore Marketplace"
-
+    
   },
   {
      name : "See Aunction"
