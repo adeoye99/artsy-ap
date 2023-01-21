@@ -21,8 +21,8 @@ function App() {
     <div className="App">
       <Suspense fallback = {
       <div>
-        loading...
-        {/* <BallTriangle
+        {/* loading... */}
+        <BallTriangle
              height={100}
              width={100}
              radius={5}
@@ -31,7 +31,7 @@ function App() {
               wrapperClass={{}}
              wrapperStyle=""
              visible={true}
-           /> */}
+           />
       </div> 
     }>
       <Router>
