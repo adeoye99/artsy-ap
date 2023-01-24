@@ -6,6 +6,7 @@ import Options from "../Component/Options";
 import CreatorOfWeek from '../Component/CreatorOfWeek';
 import Subscribe from '../Component/Subscribe';
 
+
 const OptionDetails = [
 
   {

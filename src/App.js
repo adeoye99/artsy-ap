@@ -11,10 +11,13 @@ import { Route , Routes  } from 'react-router-dom';
 import React , {lazy ,  Suspense} from "react"
 import {BallTriangle } from  'react-loader-spinner'
 
+
+
 const Home = lazy(() => import("./Pages/Home") )
 const Drop = lazy(() => import("./Pages/Drop") )
 const Auction = lazy(() => import("./Pages/Auction") )
 const Marketplace = lazy(() => import("./Pages/Marketplace") )
+const Footer  = lazy(()=> import("./Component/Footer") )
 
 function App() {
   return (
@@ -42,6 +45,7 @@ function App() {
            <Route path= "/drop" element ={<Drop/>}/>
            <Route path = "/marketplace" element = {<Marketplace/>} />
         </Routes>
+        <Footer/>
       </Router>
       </Suspense>
       
