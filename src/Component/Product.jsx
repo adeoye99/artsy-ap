@@ -5,13 +5,13 @@ import { BsArrowRightCircle } from "react-icons/bs";
 const Product = ({title ,img , about}) => {
   return (
     <>
-      <div className='mx-[0px] md:grid grid-cols-2 mt-[100px] py-[100px]  border-t-2'>
+      <div className='sm: mt-[10px] md:grid grid-cols-2 mt-[100px] py-[100px]  border-t-2'>
         <div className=''>
             <img className='float-right' src = {product1}/>
         </div>
-        <div className=' text-left ml-10 mr-[190px]'>
+        <div className='sm: w-full ml-[0px] md:text-left ml-10 mr-[190px] w-90'>
             <h1 className='text-[10px] w-full flex md:font-semibold text-3xl' >The Boolean Egyptian</h1>
-            <p className='text-sm flex w-50  md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
+            <p className='text-sm w-full md:mt-[50px] text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
             <div>
               <div>
 
