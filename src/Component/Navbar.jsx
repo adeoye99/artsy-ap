@@ -4,7 +4,7 @@ import { FiSearch } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { HiOutlineBell } from "react-icons/hi";
 import { HiOutlineXMark } from "react-icons/hi2";
-
+import { NavLink } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 
 
@@ -39,14 +39,14 @@ const NavLinkdetails = [
 
 
 
-const NavLink = ({link , name}) =>{
+const MenuLink = ({link , name}) =>{
   return (
 
-    <Link to = {link}>
-          <p >
+    <NavLink to = {link}  className={({isActive }) => ` border-black m-auto pb-1 ${isActive ? "border-b-2" : null} `}>
+      
             {name}
-          </p>
-        </Link>
+          
+        </NavLink>
 
 
   )
@@ -75,7 +75,7 @@ const Navbar = () => {
     <>
     <div className='grid grid-cols-3 h-[80px] '>
         <div className=' m-auto w-2'>
-            <p className='z-50 md:font-bold text-[23px]'>ARTSY</p>
+            <p className='z-1000 md:font-bold text-[23px] z-200'>ARTSY</p>
         </div>
         <div onClick = {()=>{setOpen(!open)}} className = "absolute z-50 right-4 top-6 md:hidden">
           {
@@ -96,7 +96,7 @@ const Navbar = () => {
           NavLinkdetails.map((item)=>{
             return(
 
-              <NavLink
+              <MenuLink
                 name = {item.name}
                 link = {item.link}
               />
@@ -110,7 +110,10 @@ const Navbar = () => {
           {
            NavLinkdetails.map((item)=>{
             return(
-              <SidebarLink name = {item.name} link = {item.link}/>
+              <SidebarLink
+               name = {item.name} 
+               link = {item.link}
+               />
             )
              })
          }
@@ -119,7 +122,7 @@ const Navbar = () => {
        <div className = "hidden md:grid grid-cols-3 items-center mx-auto gap-7" >
         <div >
            <FiSearch 
-            style = {searchStyle}
+             style = {searchStyle}
              size = "25px"
         
             />
