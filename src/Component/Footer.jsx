@@ -1,20 +1,47 @@
 import React from 'react';
+import FooterLink from './FooterLink';
 
+
+const footerDetails = [
+
+  {
+
+   name: "Home"
+  },
+  {
+
+    name: "Marketplace"
+   },
+   {
+
+    name: "Auction"
+   },
+   {
+
+    name: "Drops"
+   },
+]
 const Footer = () => {
   return (
     <>
-      <div className='grid grid-cols-4' >
-        <div c>
-          <p>ARTSY</p>
+      <div className='grid grid-cols-4 min-h-[200px]' >
+        <div className='flex justify-center items-center'>
+          <p className='text-[48px] font-600 text-center my-auto'>ARTSY.</p>
 
         </div>
         <div>
           <ul className='text-left'>
-            <li>Home</li>
-            <li>Marketplace</li>
-            <li>Auction</li>
-            <li>Drops</li>
+            {
+              footerDetails.map((item)=>{
+                return(
+                  <FooterLink
+                      name = {item.name}
+                  />
+                )
+              })
+            }
             
+
           </ul>
 
         </div>
@@ -36,7 +63,7 @@ const Footer = () => {
           </ul>
 
         </div>
-        
+
         
 
       </div>
