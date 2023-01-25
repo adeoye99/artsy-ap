@@ -18,7 +18,9 @@ const Drop = lazy(() => import("./Pages/Drop") )
 const Auction = lazy(() => import("./Pages/Auction") )
 const Marketplace = lazy(() => import("./Pages/Marketplace") )
 const Footer  = lazy(()=> import("./Component/Footer") )
-const ShoppingCart = lazy(() => import('./Component/ShoppingCart') )
+const ShoppingCart = lazy(() => import('./Pages/ShoppingCart') )
+const PaymentDetails = lazy(() => import('./Pages/PaymentDetails'))
+const ShoppingDetails = lazy(() => import('./Pages/ShoppingDetails'))
 
 function App() {
   return (
@@ -46,8 +48,8 @@ function App() {
            <Route path= "/drop" element ={<Drop/>}/>
            <Route path="/marketplace" element={<Marketplace/>}>
                   <Route index element={<ShoppingCart />}/>
-                    {/* <Route path="success-screen" element={<Success />} />
-                   <Route path = "recommend" element= { <Recommend />}/> */}
+                  <Route path="shoppingdetails" element={<ShoppingDetails />} />
+                  <Route path = "paymentDetails" element= { <PaymentDetails />}/>
            </Route>  
         </Routes>
         <Footer/>
