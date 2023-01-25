@@ -1,19 +1,16 @@
 import React from "react"
+import {Router , Routes} from "react-router-dom"
 
 
 const Marketplace = () =>{
     return (
-       <div>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-           <h1>my mind is getting good due to meeting right people</h1>
-       </div>
+       <>
+         <div>
+             
+            
+
+         </div>
+       </>
 
     )
 }
