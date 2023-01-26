@@ -12,7 +12,7 @@ const Marketplace = () =>{
             <div className="">
                 <input
                    placeholder="Search"
-                   className="rounded bg-gray-400 "
+                   className="rounded bg-gray-300 "
                 />
                 <div >
                    <h1 className="flex items-center justify-center border-b-4 w-[80%] mx-auto pb-2"> <IoOptionsOutline size = "30px"/> Filter</h1>
