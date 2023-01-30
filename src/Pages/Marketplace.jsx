@@ -39,7 +39,7 @@ const Marketplace = () =>{
                         <select
                            className= "mt-4 w-[100%]"
                          >
-                           <option value = "By Category">B Category</option>
+                           <option value = "By Category">By Category</option>
                         </select> 
                         <div> 
                            {
@@ -58,6 +58,17 @@ const Marketplace = () =>{
                         </div>
                         
 
+                   </div>
+                   <div>
+                   <select
+                           className= "mt-4 w-[100%]"
+                         >
+                           <option value = "By Category">By Price</option>
+                        </select> 
+
+                  <p>$100.00 - $150.00</p>
+
+                  
                    </div>
                 </div>
             </div>
