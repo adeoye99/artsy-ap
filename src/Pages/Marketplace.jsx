@@ -32,10 +32,10 @@ const Marketplace = () =>{
             <div className="w-[80%] mx-auto text-left">
                 <input
                    placeholder="Search"
-                   className="rounded bg-gray-300 "
+                   className="rounded bg-gray-300 p-3"
                 />
                 <div>
-                   <h1 className ="flex items-center border-b-4 w-[80%] pb-2"> <IoOptionsOutline size = "30px"/> Filter</h1>
+                   <h1 className ="flex items-center border-b-4 w-[80%] pb-2 mt-10"> <IoOptionsOutline size = "30px"/> Filter</h1>
                    <div className="mt-2">
                         <select
                            className= "mt-4 w-[100%]"
@@ -77,7 +77,7 @@ const Marketplace = () =>{
                          >
                            <option value = "By Category">By artist</option>
                         </select> 
-                        <ul>
+                        <ul className="mt-5">
                            <li>All</li>
                            <li>Below $100.00</li>
                            <li>$150.00 - $200.00</li>
@@ -86,16 +86,16 @@ const Marketplace = () =>{
                    </div>
 
                    <select
-                           className= "mt-4 w-[100%]"
+                           className= "mt-10 w-[100%]"
                          >
                            <option value = "By Category">Collection year</option>
                         </select>
                 </div>
             </div>
-            <div className="col-span-4">
+            <div className="col-span-4 mx-auto">
                 <input
                    placeholder="See 1-6 of 15 results"
-                   className="rounded w-[80%] bg-gray-100"
+                   className="rounded w-[80%] bg-gray-100 p-3"
                 
                 />
                 <div>
