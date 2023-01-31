@@ -25,6 +25,24 @@ const CATEGORIES  = [
    }
 
 ] 
+const ProductSampleData = [
+   {
+   
+
+   },
+   {
+
+
+   },
+   {
+
+
+   },
+   {
+      
+   }
+
+]
 const Marketplace = () =>{
     return (
        <>
