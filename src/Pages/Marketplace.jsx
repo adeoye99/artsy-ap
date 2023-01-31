@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom"
 import MarketNav from "../Component/MarketNav"
 import { IoOptionsOutline } from "react-icons/io5";
 import Category from "../Component/Category"; 
+import ProductSample from "../Component/ProductSample";
 
  
 
@@ -68,18 +69,52 @@ const Marketplace = () =>{
 
                   <p>$100.00 - $150.00</p>
 
-                  
+
                    </div>
+                   <div>
+                         <select
+                           className= "mt-4 w-[100%]"
+                         >
+                           <option value = "By Category">By artist</option>
+                        </select> 
+                        <ul>
+                           <li>All</li>
+                           <li>Below $100.00</li>
+                           <li>$150.00 - $200.00</li>
+                           <li>Above $200.00</li>
+                        </ul>
+                   </div>
+
+                   <select
+                           className= "mt-4 w-[100%]"
+                         >
+                           <option value = "By Category">Collection year</option>
+                        </select>
                 </div>
             </div>
             <div className="col-span-4">
-
-
                 <input
-                   placeholder="Search"
+                   placeholder="See 1-6 of 15 results"
                    className="rounded w-[80%] bg-gray-100"
                 
                 />
+                <div>
+                  <ProductSample
+                  
+                  />
+                  <ProductSample
+                  
+                  />
+                   <ProductSample
+                  
+                  />
+                  <ProductSample
+                  
+                  />
+                  <ProductSample
+                  
+                  />
+                </div>
 
 
             </div>
