@@ -2,7 +2,7 @@ import React from 'react'
 
 function FooterLink({name}) {
   return (
-    <div>{name}</div>
+    <div className='text-left mt-4'>{name}</div>
   )
 }
 
