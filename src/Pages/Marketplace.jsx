@@ -55,38 +55,38 @@ const ProductSampleData = [
    },
    {
       img: ProductS4,
-      name_of_product : "PHILOMENA ‘22",
+      name_of_product : "ELLIPSIA",
       price : "$3.90"
       
    },
    {
       img: ProductS5,
-      name_of_product : "PHILOMENA ‘22",
+      name_of_product : "THE LAWMAKERS",
       price : "$3.90"
       
    },
    
       {
          img: ProductS6,
-         name_of_product : "PHILOMENA ‘22",
+         name_of_product : "VEIL",
          price : "$3.90"
          
       },
       {
          img: ProductS7,
-         name_of_product : "PHILOMENA ‘22",
+         name_of_product : "ALTERNATING",
          price : "$3.90"
          
       },
       {
          img: ProductS8,
-         name_of_product : "PHILOMENA ‘22",
+         name_of_product : "ROSEMARY ",
          price : "$3.90"
          
       },
       {
          img: ProductS9,
-         name_of_product : "PHILOMENA ‘22",
+         name_of_product : "BEVERLY",
          price : "$3.90"
          
       }
@@ -97,7 +97,7 @@ const Marketplace = () =>{
     return (
        <>
          <div className="grid grid-cols-5 w-[80%] mx-auto ">
-            <div className="w-[80%] mx-auto text-left static">
+            <div className="hidden md:w-[80%] mx-auto text-left md:sticky mt-4 pt-4 md:hidden lg:block">
                 <input
                    placeholder="Search"
                    className="rounded bg-gray-300 p-3"
@@ -160,7 +160,7 @@ const Marketplace = () =>{
                         </select>
                 </div>
             </div>
-            <div className="col-span-4 mx-auto bg-gray-200">
+            <div className="w-[100%] col-span-6  md:col-span-4 mx-auto mt-4 pt-4 bg-gray-100">
                 <input
                    placeholder="See 1-6 of 15 results"
                    className="rounded w-[80%] bg-white p-3"
