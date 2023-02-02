@@ -4,7 +4,15 @@ import MarketNav from "../Component/MarketNav"
 import { IoOptionsOutline } from "react-icons/io5";
 import Category from "../Component/Category"; 
 import ProductSample from "../Component/ProductSample";
-
+import ProductS1 from "../assets/Images/ProductS1.png"
+import ProductS2 from "../assets/Images/ProductS2.png"
+import ProductS3 from "../assets/Images/ProductS3.png"
+import ProductS4 from "../assets/Images/ProductS4.png"
+import ProductS5 from "../assets/Images/ProductS5.png"
+import ProductS6 from "../assets/Images/ProductS6.png"
+import ProductS7 from "../assets/Images/ProductS7.png"
+import ProductS8 from "../assets/Images/ProductS8.png"
+import ProductS9 from "../assets/Images/ProductS9.png"
  
 
 const CATEGORIES  = [
@@ -27,27 +35,69 @@ const CATEGORIES  = [
 ] 
 const ProductSampleData = [
    {
-   
+      img: ProductS1,
+      name_of_product : "PHILOMENA ‘22",
+      price : "$3.90"
+   },
+   {
+      img: ProductS2,
+      name_of_product : "BOOLEAN EGYPTIAN",
+      price : "$3.90"
+
 
    },
    {
+      img: ProductS3,
+      name_of_product : "BLANC",
+      price : "$3.90"
 
 
    },
    {
-
-
-   },
-   {
+      img: ProductS4,
+      name_of_product : "PHILOMENA ‘22",
+      price : "$3.90"
       
-   }
+   },
+   {
+      img: ProductS5,
+      name_of_product : "PHILOMENA ‘22",
+      price : "$3.90"
+      
+   },
+   
+      {
+         img: ProductS6,
+         name_of_product : "PHILOMENA ‘22",
+         price : "$3.90"
+         
+      },
+      {
+         img: ProductS7,
+         name_of_product : "PHILOMENA ‘22",
+         price : "$3.90"
+         
+      },
+      {
+         img: ProductS8,
+         name_of_product : "PHILOMENA ‘22",
+         price : "$3.90"
+         
+      },
+      {
+         img: ProductS9,
+         name_of_product : "PHILOMENA ‘22",
+         price : "$3.90"
+         
+      }
+   
 
 ]
 const Marketplace = () =>{
     return (
        <>
-         <div className="grid grid-cols-5 ">
-            <div className="w-[80%] mx-auto text-left">
+         <div className="grid grid-cols-5 w-[80%] mx-auto ">
+            <div className="w-[80%] mx-auto text-left static">
                 <input
                    placeholder="Search"
                    className="rounded bg-gray-300 p-3"
@@ -110,17 +160,32 @@ const Marketplace = () =>{
                         </select>
                 </div>
             </div>
-            <div className="col-span-4 mx-auto">
+            <div className="col-span-4 mx-auto bg-gray-200">
                 <input
                    placeholder="See 1-6 of 15 results"
-                   className="rounded w-[80%] bg-gray-100 p-3"
+                   className="rounded w-[80%] bg-white p-3"
                 
                 />
                 <div>
-                  <ProductSample
-                  
-                  />
-                  <ProductSample
+
+                  {
+
+                        ProductSampleData.map(
+                           (item)=>{
+                              return(
+                                 <ProductSample
+                                   name ={item.name_of_product}
+                                   price = {item.price}
+                                   image ={item.img}
+                                 />
+
+
+                              )
+                           }
+                        )
+                  }
+                 
+                  {/* <ProductSample
                   
                   />
                    <ProductSample
@@ -131,7 +196,7 @@ const Marketplace = () =>{
                   />
                   <ProductSample
                   
-                  />
+                  /> */}
                 </div>
 
 

@@ -8,8 +8,11 @@ import { Route , Routes  } from 'react-router-dom';
 // import Drop from "./Pages/Drop"
 // import Auction from "./Pages/Auction"
 // import Marketplace from "./Pages/Marketplace"
-import React , {lazy ,  Suspense} from "react"
+import React , {lazy ,  Suspense ,useEffect} from "react"
 import {BallTriangle } from  'react-loader-spinner'
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
 
 
 
@@ -22,13 +25,20 @@ const ShoppingCart = lazy(() => import('./Pages/ShoppingCart') )
 const PaymentDetails = lazy(() => import('./Pages/PaymentDetails'))
 const ShoppingDetails = lazy(() => import('./Pages/ShoppingDetails'))
 
+
+
+
 function App() {
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
   return (
     <div className="App">
       <Suspense fallback = {
       <div>
-        loading...
-        {/* <BallTriangle
+        {/* loading... */}
+        <BallTriangle
              height={100}
              width={100}
              radius={5}
@@ -37,7 +47,7 @@ function App() {
               wrapperClass={{}}
              wrapperStyle=""
              visible={true}
-           /> */}
+           />
       </div> 
     }>
       <Router>

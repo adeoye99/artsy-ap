@@ -13,7 +13,7 @@ const CreatorOfWeek = () => {
            <p  data-aos="fade-right" className='text-left ml-3 w-[100%] text-sm mt-10 md:text-[23px] md:ml-[60px]  md:w-[50%] text-gray-100 md:mt-[200px] leading-10	'>
               “Everything always looked better in black and white. Everything always as if it were the first time; there’s always more people in a black and white photograph. It just makes it seem that there were more people at a gig, more people at a football match, than with colour photography. Everything looks more exciting.”– Jack Lowden
            </p>
-           <img data-aos="fade-left" className=' w-[55%] h-[50%] left-0 md:z-100 absolute md:top-[100px] md:left-[30%] md:w-[45%] md:h-[100%]' src = { creatoroftheweek }/>
+           <img data-aos= "fade-left" className=' w-[55%] h-[50%] left-0 md:z-100 absolute md:top-[100px] md:left-[30%] md:w-[45%] md:h-[100%]' src = { creatoroftheweek }/>
            <img data-aos="fade-left" className='w-[10%] md:z-20 mt-[10%] ml-[50%]' src = {nine}/> 
            <ul className='absolute right-[100px] top-4 list-none text-[35px] text-left'>
                <li className=''>Editorial</li>
