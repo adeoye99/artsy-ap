@@ -96,8 +96,8 @@ const ProductSampleData = [
 const Marketplace = () =>{
     return (
        <>
-         <div className="grid grid-cols-5 w-[80%] mx-auto ">
-            <div className="hidden md:w-[80%] mx-auto text-left md:sticky mt-4 pt-4 md:hidden lg:block">
+         <div className="grid grid-cols-5 w-[80%] mx-auto">
+            <div className="hidden md:w-[80%] mx-auto text-left md:fixed  mt-4 pt-4 md:hidden lg:block">
                 <input
                    placeholder="Search"
                    className="rounded bg-gray-300 p-3"
