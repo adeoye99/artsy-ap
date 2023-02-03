@@ -29,7 +29,6 @@ const ShoppingDetails = lazy(() => import('./Pages/ShoppingDetails'))
 
 
 function App() {
-
   useEffect(()=>{
     Aos.init({duration:2000})
   },[])

@@ -4,8 +4,6 @@ import creatoroftheweek from "../assets/Images/creatorOfWeek.png"
 import nine from "../assets/Images/1985.png" 
 
 const CreatorOfWeek = () => {
-
-  
   return (
     <>
         <div className='min-h-screen w-full bg-center bg-cover relative' style = {{ backgroundImage : `url(${Background2})`}} > 

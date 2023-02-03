@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom"
 import MarketNav from "../Component/MarketNav"
 import { IoOptionsOutline } from "react-icons/io5";
 import Category from "../Component/Category"; 
+// import {ProductS1 , ProductS2} from "../assests/Images"
 import ProductSample from "../Component/ProductSample";
 import ProductS1 from "../assets/Images/ProductS1.png"
 import ProductS2 from "../assets/Images/ProductS2.png"
@@ -96,11 +97,11 @@ const ProductSampleData = [
 const Marketplace = () =>{
     return (
        <>
-         <div className="grid grid-cols-5 w-[80%] mx-auto">
-            <div className="hidden md:w-[80%] mx-auto text-left md:fixed  mt-4 pt-4 md:hidden lg:block">
+         <div className="grid grid-cols-5 w-[100%] h-screen flex">
+            <div className="hidden md:w-[80%] mx-auto text-left md:block md:mt-4 pt-4 pl-[20%] ">
                 <input
                    placeholder="Search"
-                   className="rounded bg-gray-300 p-3"
+                   className="rounded bg-gray-300 p-3 w-40"
                 />
                 <div>
                    <h1 className ="flex items-center border-b-4 w-[80%] pb-2 mt-10"> <IoOptionsOutline size = "30px"/> Filter</h1>
@@ -121,21 +122,16 @@ const Marketplace = () =>{
                                  )
                               })
                            }
-                          
-
-
                         </div>
-                        
-
-                   </div>
+                    </div>
                    <div>
-                   <select
+                        <select
                            className= "mt-4 w-[100%]"
                          >
                            <option value = "By Category">By Price</option>
                         </select> 
 
-                  <p>$100.00 - $150.00</p>
+                        <p>$100.00 - $150.00</p>
 
 
                    </div>
@@ -153,16 +149,19 @@ const Marketplace = () =>{
                         </ul>
                    </div>
 
-                   <select
+                      <select
                            className= "mt-10 w-[100%]"
                          >
                            <option value = "By Category">Collection year</option>
                         </select>
                 </div>
             </div>
-            <div className="w-[100%] col-span-6  md:col-span-4 mx-auto mt-4 pt-4 bg-gray-100">
+            <div className="w-[100%] col-span-6 md:col-span-4 mx-auto mt-4 pt-4 bg-gray-100 flex-1 overflow-hidden overflow-y-scroll">
+               
                 <input
+                   
                    placeholder="See 1-6 of 15 results"
+
                    className="rounded w-[80%] bg-white p-3"
                 
                 />
@@ -185,25 +184,10 @@ const Marketplace = () =>{
                         )
                   }
                  
-                  {/* <ProductSample
                   
-                  />
-                   <ProductSample
-                  
-                  />
-                  <ProductSample
-                  
-                  />
-                  <ProductSample
-                  
-                  /> */}
-                </div>
-
-
+                
+               </div>
             </div>
-              
-            {/* <MarketNav/>
-            <Outlet/> */}
          </div>
        </>
 
