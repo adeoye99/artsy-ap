@@ -73,7 +73,7 @@ const Navbar = () => {
   const [open , setOpen ] = useState(false)
   return (
     <>
-    <div className='grid grid-cols-3 h-[80px] '>
+    <div className='grid grid-cols-3 h-[80px] bg-white w-full z-10000'>
         <div className=' m-auto w-2'>
             <p className='z-1000 md:font-bold text-[23px] z-200'>ARTSY</p>
         </div>

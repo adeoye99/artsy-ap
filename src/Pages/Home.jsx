@@ -20,7 +20,7 @@ const OptionDetails = [
   }
 ]
 const Home = () => {
-  return (
+  return(
     <>
         <Hero/>      
         <Product/>

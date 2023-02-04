@@ -1,15 +1,17 @@
 import React from 'react'
 import ProductS1 from "../assets/Images/ProductS1.png"
 
-const ProductSample = () => {
+
+const ProductSample = ({image ,  name ,price}) => {
   return (
     <>
-    <div className='bg-white w-50 text-left float-left ml-[10%] mt-[5%]'>
+    <div className='bg-white  h-[370px] text-left float-left ml-[5%] mt-[5%] p-3 rounded-md mb-[5%]'>
        <img 
-          src = {ProductS1}
+         className=' '
+          src = {image}
         />
-        <p>PHILOMENA '22</p>
-        <strong>$3.90</strong>
+        <p>{name}</p>
+        <p className='text-[20px] text-bold font-bold mt-5 '>{price}</p>
 
 
     </div>
