@@ -1,4 +1,4 @@
-import React from "react"
+import React , { useState } from "react"
 import { Outlet } from "react-router-dom"
 import MarketNav from "../Component/MarketNav"
 import { IoOptionsOutline } from "react-icons/io5";
@@ -14,6 +14,9 @@ import ProductS6 from "../assets/Images/ProductS6.png"
 import ProductS7 from "../assets/Images/ProductS7.png"
 import ProductS8 from "../assets/Images/ProductS8.png"
 import ProductS9 from "../assets/Images/ProductS9.png"
+
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';
  
 
 const CATEGORIES  = [
@@ -95,6 +98,18 @@ const ProductSampleData = [
 
 ]
 const Marketplace = () =>{
+
+   function valuetext(value) {
+      return `${value}°C`;
+    }
+    
+   
+      const [value, setValue] = useState([20, 37]);
+    
+      const handleChange = (event, newValue) => {
+        setValue(newValue);
+      };
+
     return (
        <>
          <div className="grid grid-cols-5 w-[100%] h-screen flex">
@@ -126,12 +141,22 @@ const Marketplace = () =>{
                     </div>
                    <div>
                         <select
-                           className= "mt-4 w-[100%]"
+                           className= "mt-4 w-[100%] pl-0"
                          >
                            <option value = "By Category">By Price</option>
                         </select> 
 
-                        <p>$100.00 - $150.00</p>
+                        <p className="mt-4">$100.00 - $150.00</p>
+                        <Box sx={{ width: 100 ,marginTop : 5 }}>
+                        <Slider
+                          getAriaLabel={() => 'Temperature range'}
+                          value={value}
+                          onChange={handleChange}
+                          valueLabelDisplay="auto"
+                          getAriaValueText={valuetext}
+                          sx= {{ color : "black"}}
+                        />
+                      </Box>
 
 
                    </div>
@@ -165,8 +190,8 @@ const Marketplace = () =>{
                    className="rounded w-[80%] bg-white p-3"
                 
                 />
-                <div>
-
+                <div className="flex flex-col">
+                  <div>
                   {
 
                         ProductSampleData.map(
@@ -183,8 +208,9 @@ const Marketplace = () =>{
                            }
                         )
                   }
+                  </div>
                  
-                  
+                  <button className="border-2 py-3 w-40 mx-auto rounded-lg mb-4">See More</button>
                 
                </div>
             </div>
