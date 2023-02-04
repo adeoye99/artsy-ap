@@ -95,7 +95,6 @@ const Footer = () => {
 
         </div>
 
-        
 
       </div>
        <footer className='text-gray-400 mt-4' >Artsystudios©{year} All Rights Reserved</footer>
