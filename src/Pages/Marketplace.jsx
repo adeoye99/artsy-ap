@@ -210,7 +210,7 @@ const Marketplace = () =>{
                   }
                   </div>
                  
-                  <button className="border-2 py-3 w-40 mx-auto rounded-lg mb-4">See More</button>
+                  <button className="border-2 py-3 w-40 mx-auto rounded-lg mb-4 bg-white">See More</button>
                 
                </div>
             </div>
