@@ -1,12 +1,16 @@
 import React from 'react';
+import Carousel from "react-elastic-carousel"
+
 
 const Auction = () => {
   return (
-    <div>
+    <>
 
-    <div>
+    <Carousel>
          
-    </div>
+    </Carousel>
+    <div className='flex f'>
+    
         <h1>564564235479et78</h1>
         <h1>564564235479et78</h1>
         <h1>564564235479et78</h1>
@@ -20,7 +24,9 @@ const Auction = () => {
         <h1>564564235479et78</h1>
         <h1>564564235479et78</h1>
         <h1>564564235479et78</h1>
-    </div>
+
+        </div>
+    </>
   );
 }
 
