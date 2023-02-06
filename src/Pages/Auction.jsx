@@ -9,7 +9,7 @@ const Auction = () => {
     <Carousel>
          
     </Carousel>
-    <div className='flex f'>
+    <div className='flex'>
     
         <h1>564564235479et78</h1>
         <h1>564564235479et78</h1>
