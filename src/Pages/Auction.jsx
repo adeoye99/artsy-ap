@@ -2,7 +2,9 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Sliderproduct from '../Component/Sliderproduct';
+import PopularCreators from '../Component/PopularCreators';
 
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const Auction = () => {
   return (
@@ -72,13 +74,19 @@ const Auction = () => {
   <Sliderproduct/>
 </Carousel>
 <div>
-    <p className='text-left mt-[5%]'>Top bids from popular Creator</p>
+    <p className='text-left mt-[5%] text-lg font-2'>Top bids from popular Creator</p>
     <div className='grid grid-cols-2 '>
        <div>
+       <PopularCreators
+       
+       />
     
     
        </div>
         <div>
+         <PopularCreators
+       
+         />
        
         </div>
     </div>
