@@ -15,14 +15,15 @@ const Auction = () => {
         <p className='text-left text-lg mt-[5%] mb-[5%] '>Here’s an overview of products actively on auction, explore!</p>
 
         <Carousel
+        arrows = {false}
            additionalTransfrom={0}
-           arrows
+           
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
             containerClass="container"
-           // customLeftArrow={<CustomLeftArrow />}
-           // customRightArrow={<CustomRightArrow />}
+          //  customLeftArrow={none}
+          //  customRightArrow={none}
             dotListClass=""
             draggable
             focusOnSelect={false}
