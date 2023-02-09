@@ -5,7 +5,7 @@ import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 import { red } from '@mui/material/colors';
 
-const PopularCreators = () => {
+const PopularCreators = ({img , theme , creator , date, highest, currentbid }) => {
     return (
         <>
         <div className='w-[100%] md:w-[100%] mx-auto'>
@@ -15,31 +15,31 @@ const PopularCreators = () => {
                 <Checkbox 
                  icon={<FavoriteBorder />} 
                  checkedIcon={<Favorite />} 
-                sx = {{
-                 color: red[800],
-                 '&.Mui-checked': {
+                 sx = {{
+                  color: red[800],
+                  '&.Mui-checked': {
                    color: red[600],
-                 },
-                }}
+                  },
+                 }}
                />
           
              </div>
              
-             <img src = {Creator1}/>
-             <p className='text-left text-xl p-5 font-semibold'>Out of the box</p>
+             <img src = {img}/>
+             <p className='text-left text-2xl p-5 font-bold'>{theme}</p>
              
           
           </div> 
           <div className='w-[100%] md:w-[80%] mx-auto text-left'>
             <div>
-              <p className='mt-4 flex items-center'> <p className='text-gray-300 text-lg'> Creator </p> <p className='ml-[4px]'>:</p> <p className='ml-[15px] text-extrabold'> Dan Murray </p></p>
-              <p className='mt-4 flex' > <p className='text-gray-300 text-lg'> Date </p><p className='ml-[4px]'>:</p> <p className='ml-[15px] text-extrabold'> 12/08/22 </p> </p>
-              <p className='mt-4 flex' > <p className='text-gray-300 text-lg'> Highest</p> <p className='ml-[4px]'>:</p> <p className='ml-[15px] text-extrabold'> 0.57 ETH</p> </p> 
+              <p className='mt-4 flex items-center'> <p className='text-gray-500 text-lg'> Creator </p> <p className='ml-[4px]'>:</p> <p className='ml-[15px] font-bold'> {creator} </p></p>
+              <p className='mt-4 flex' > <p className='text-gray-500 text-lg'> Date </p><p className='ml-[4px]'>:</p> <p className='ml-[15px] font-bold'>{date}</p> </p>
+              <p className='mt-4 flex' > <p className='text-gray-500 text-lg'> Highest</p> <p className='ml-[4px]'>:</p> <p className='ml-[15px] font-bold'>{highest}</p> </p> 
             </div>   
             <div className='grid grid-cols-2 mt-4 bg-gray-100 p-4 rounded-lg'>
               <div className='mx-auto'>
                 <p>Current Bid</p>
-                <p>0.987 ETH</p>
+                <p className='font-bold '>{currentbid}</p>
               </div>
              <div className='flex justify-center align-center'>
                 <button className='border text-white bg-[#00008B] px-5 py-2 mx-auto w-[80%] rounded-lg'>Place Bid</button>

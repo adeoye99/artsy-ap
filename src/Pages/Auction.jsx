@@ -3,6 +3,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Sliderproduct from '../Component/Sliderproduct';
 import PopularCreators from '../Component/PopularCreators';
+import Creator1 from "../assets/Images/Creator1.png"
+
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -79,13 +81,24 @@ const Auction = () => {
     <div className='md:grid grid-cols-2 mt-[3%] '>
        <div >
        <PopularCreators
-       
+        img = {Creator1}
+        theme = "Out of the box"
+        date = "12/08/22"
+        creator = "Dan Murray"
+        highest = "0.57 ETH" 
+        currentbid="0.987 ETH"
        />
     
     
        </div>
         <div>
          <PopularCreators
+         img = {Creator1}
+        theme = "Falling apart"
+        date = "12/08/22"
+        creator = "Jacob Banks"
+        highest = "0.34 ETH"
+        currentbid="0.99 ETH"
        
          />
        
