@@ -8,8 +8,8 @@ import { red } from '@mui/material/colors';
 const PopularCreators = () => {
     return (
         <>
-        <div className='w-[80%] mx-auto'>
-          <div className='border-2 w-[50%] relative mx-auto rounded-lg'>
+        <div className='w-[100%] md:w-[100%] mx-auto'>
+          <div className='w-[100%] md:border-2 md:w-[80%] relative mx-auto rounded-lg'>
           
              <div className='w-12 h-12 border rounded-full flex justify-center items-center text-center p-5 shadow-xl ml-[80%] mt-[3%] mb-[3%]'>
                 <Checkbox 
@@ -26,23 +26,23 @@ const PopularCreators = () => {
              </div>
              
              <img src = {Creator1}/>
-             <p className='text-left p-5'>Out of the box</p>
+             <p className='text-left text-xl p-5 font-semibold'>Out of the box</p>
              
           
           </div> 
-          <div className='w-[50%] mx-auto text-left'>
+          <div className='w-[100%] md:w-[80%] mx-auto text-left'>
             <div>
-              <p>Creator : Dan Murray </p>
-              <p>Date : 12/08/22</p>
-              <p>Highest : 0.57 ETH </p> 
+              <p className='mt-4 flex items-center'> <p className='text-gray-300 text-lg'> Creator </p> <p className='ml-[4px]'>:</p> <p className='ml-[15px] text-extrabold'> Dan Murray </p></p>
+              <p className='mt-4 flex' > <p className='text-gray-300 text-lg'> Date </p><p className='ml-[4px]'>:</p> <p className='ml-[15px] text-extrabold'> 12/08/22 </p> </p>
+              <p className='mt-4 flex' > <p className='text-gray-300 text-lg'> Highest</p> <p className='ml-[4px]'>:</p> <p className='ml-[15px] text-extrabold'> 0.57 ETH</p> </p> 
             </div>   
-            <div className='grid grid-cols-2'>
-              <div>
+            <div className='grid grid-cols-2 mt-4 bg-gray-100 p-4 rounded-lg'>
+              <div className='mx-auto'>
                 <p>Current Bid</p>
                 <p>0.987 ETH</p>
               </div>
-             <div>
-                <button>Place Bid</button>
+             <div className='flex justify-center align-center'>
+                <button className='border text-white bg-[#00008B] px-5 py-2 mx-auto w-[80%] rounded-lg'>Place Bid</button>
              </div>
             </div>
           </div>

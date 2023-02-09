@@ -8,31 +8,31 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const Auction = () => {
   return (
-    <>
+  <>
     <div className='pl-[5%] w-full'>
-    <p className='text-left text-lg mt-[5%] mb-[5%] '>Here’s an overview of products actively on auction, explore!</p>
+        <p className='text-left text-lg mt-[5%] mb-[5%] '>Here’s an overview of products actively on auction, explore!</p>
 
-<Carousel
-  additionalTransfrom={0}
-  arrows
-  autoPlaySpeed={3000}
-  centerMode={false}
-  className=""
-  containerClass="container"
-  // customLeftArrow={<CustomLeftArrow />}
-  // customRightArrow={<CustomRightArrow />}
-  dotListClass=""
-  draggable
-  focusOnSelect={false}
-  infinite
-  itemClass=""
-  keyBoardControl
-  minimumTouchDrag={80}
-  pauseOnHover
-  renderArrowsWhenDisabled={false}
-  renderButtonGroupOutside={false}
-  renderDotsOutside={false}
-  responsive={{
+        <Carousel
+           additionalTransfrom={0}
+           arrows
+          autoPlaySpeed={3000}
+          centerMode={false}
+          className=""
+            containerClass="container"
+           // customLeftArrow={<CustomLeftArrow />}
+           // customRightArrow={<CustomRightArrow />}
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+              keyBoardControl
+              minimumTouchDrag={80}
+             pauseOnHover
+            renderArrowsWhenDisabled={false}
+           renderButtonGroupOutside={false}
+           renderDotsOutside={false}
+           responsive={{
     desktop: {
       breakpoint: {
         max: 3000,
@@ -57,26 +57,27 @@ const Auction = () => {
       items: 2,
       partialVisibilityGutter: 30
     }
-  }}
-  rewind={false}
-  rewindWithAnimation={false}
-  rtl={false}
-  shouldResetAutoplay
-  showDots={false}
-  sliderClass=""
-  slidesToSlide={1}
-  swipeable
->
-  <Sliderproduct/>
-  <Sliderproduct/>
-  <Sliderproduct/>
-  <Sliderproduct/>
-  <Sliderproduct/>
-</Carousel>
-<div>
-    <p className='text-left mt-[5%] text-lg font-2'>Top bids from popular Creator</p>
-    <div className='grid grid-cols-2 '>
-       <div>
+           }}
+          rewind={false}
+          rewindWithAnimation={false}
+          rtl={false}
+          shouldResetAutoplay
+           showDots={false}
+           sliderClass=""
+           slidesToSlide={1}
+            swipeable
+      >
+            <Sliderproduct/>
+             <Sliderproduct/>
+            <Sliderproduct/>
+             <Sliderproduct/>
+             <Sliderproduct/>
+          </Carousel>
+        </div>
+ <div className='w-[90%] mx-auto'>
+    <p className='md:text-left mt-[5%] text-2xl pl-[14%] font-semibold'>Top bids from popular Creator</p>
+    <div className='md:grid grid-cols-2 mt-[3%] '>
+       <div >
        <PopularCreators
        
        />
@@ -91,7 +92,7 @@ const Auction = () => {
         </div>
     </div>
 </div>
-</div>
+
     </>
   );
 }
