@@ -1,4 +1,5 @@
 import React from "react"
+import Upcomingdrops from "../Component/Upcomingdrops"
 
 
 const Drop = () =>{
@@ -10,6 +11,21 @@ const Drop = () =>{
                   <p className="mt-[2%] text-xl text-gray-300">Turn on notifications so that no drops will miss you.</p>
                   <button className="w-[50%] border border-black md:border md:border-black rounded-sm md:w-[18%] h-[45px] mt-[1%]" >Notify me</button>
                  </div>
+              </div>
+              <div>
+                 <Upcomingdrops
+                   
+                 />
+                 <Upcomingdrops
+                   
+                 />
+                 <Upcomingdrops
+                   
+                 />
+                 <Upcomingdrops
+                   
+                 />
+                
               </div>
         </div>
 
