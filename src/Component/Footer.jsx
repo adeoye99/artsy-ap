@@ -70,9 +70,9 @@ const Footer = () => {
           </ul>
 
         </div>
-        <div className='md:flex items-center justify-center'>
-          <ul className=' md:text-left'>
-          {
+        <div className=' md:flex items-center justify-center'>
+          <ul className='text-center md:text-left'>
+             {
               footerDetails2.map((item)=>{
                 return(
                   <FooterLink

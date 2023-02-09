@@ -8,7 +8,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 const Product = ({title ,img , about}) => {
   return (
     <>
-      <div className='mx-[0px] md:grid grid-cols-2 mt-[100px] py-[100px]  border-t-2'>
+      <div className='mx-[0px] md:grid grid-cols-2 mt-[100px] py-[100px] w-[80%] md:mx-auto border-t-2'>
         <div data-aos="fade-left" className=''>
             <img className='float-right' src = {product1}/>
         </div>
@@ -28,7 +28,7 @@ const Product = ({title ,img , about}) => {
         </div>
 
       </div>
-      <div className=' md:grid grid-cols-2 mt-[100px] py-[100px] border-t-2'>
+      <div className=' md:grid grid-cols-2 mt-[100px] py-[100px] w-[80%] md:mx-auto border-t-2'>
        
         <div className='text-left w-full md:px-[80px]'>
             <h1 className='pl-3 md:font-semibold text-3xl' >The Boolean Egyptian</h1>
@@ -50,7 +50,7 @@ const Product = ({title ,img , about}) => {
 
       </div>
 
-      <div className='mx-[0px] md:grid grid-cols-2 mt-[100px] py-[100px] border-t-2'>
+      <div className='mx-[0px] md:mx-auto md:w-[80%] grid grid-cols-2 mt-[100px] py-[100px] border-t-2'>
         <div className=''>
             <img className='float-right' src = {product3}/>
         </div>
