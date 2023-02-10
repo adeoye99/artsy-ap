@@ -3,7 +3,7 @@ import product1 from "../assets/Images/product1.png"
 import product2 from "../assets/Images/product2.png"
 import product3 from "../assets/Images/product3.png"
 import BackgroundImage from "../assets/Images/backgroundslider.png"
-import Backward from "../assets/Images/backwardarrow.png"
+import SliderImg1 from "../assets/Images/sliderimage1.png"
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { MdOutlineArrowBackIos } from "react-icons/md"
 
@@ -30,12 +30,12 @@ const Slider = () =>{
                    <h1 className="text-white text-[25px] text-left border-b-1 border-yellow py-2 ">See Upcoming Aunction and Exhibition</h1>
                  </div>
 
-                 <div style = {{ backgroundImage : `url(${product1})`}}  className = " md:grid grid-cols-2 h-[500px] w-[100%] mx-auto bg-center bg-cover opacity-100 mt-2 relative">  
+                 <div style = {{ backgroundImage : `url(${SliderImg1})`}}  className = " md:grid grid-cols-2 h-[500px] w-[100%] mx-auto bg-center bg-cover opacity-100 mt-2 relative">  
                    <div className=" w-[100%] md:grid grid-cols-5 h-[50%] md:w-[70%] md:absolute bottom-1 left-0 ">
                       <div className="flex items-center justify-center" > 
                           <h1 className="text-white text-[60px]">01</h1>
                        </div>
-                       <div className="pl-2 md:col-span-4 text-white text-left items-end text-lg ">
+                       <div className="pl-2 md:col-span-4 text-white text-left items-end text-lg mt-[60px] ">
                            <h1 className="text-white text-bellefair">MONALISA REDEFINED <br/> IN STYLE </h1>
                            <p>Start on : 08:00 GTS . Monday </p>
                            <p>GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.</p>
