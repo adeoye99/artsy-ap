@@ -12,19 +12,19 @@ const Auction = () => {
   return (
   <>
     <div className='pl-[5%] w-full'>
-        <p className='text-left text-lg mt-[5%] mb-[5%] '>Here’s an overview of products actively on auction, explore!</p>
+        <p className='text-left text-xl mt-[5%] mb-[5%] font-semibold'>Here’s an overview of products actively on auction, explore!</p>
 
         <Carousel
         arrows = {false}
            additionalTransfrom={0}
-           
+          //  responsive = {}
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
             containerClass="container"
-          //  customLeftArrow={none}
-          //  customRightArrow={none}
+        
             dotListClass=""
+            showDots={true}
             draggable
             focusOnSelect={false}
             infinite
@@ -65,14 +65,15 @@ const Auction = () => {
           rewindWithAnimation={false}
           rtl={false}
           shouldResetAutoplay
-           showDots={false}
+          swipeable={true}
+
            sliderClass=""
            slidesToSlide={1}
-            swipeable
+            
       >
-            <Sliderproduct/>
              <Sliderproduct/>
-            <Sliderproduct/>
+             <Sliderproduct/>
+             <Sliderproduct/>
              <Sliderproduct/>
              <Sliderproduct/>
           </Carousel>

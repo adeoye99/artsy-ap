@@ -3,6 +3,9 @@ import Upcomingdrops from "../Component/Upcomingdrops"
 import upcoming1 from "../assets/Images/upcomingdropimg1.png"
 import upcoming2 from "../assets/Images/upcomingdropimg2.png"
 import upcoming3 from "../assets/Images/upcomingdropimg3.png"
+import upcoming4 from "../assets/Images/upcomingdropimg4.png"
+
+
 
 
 const Upcomingdrop = [
@@ -17,6 +20,10 @@ const Upcomingdrop = [
     },
     {
       img: upcoming3
+
+    },
+    {
+       img: upcoming4
 
     }
 ]

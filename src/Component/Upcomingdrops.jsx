@@ -6,7 +6,7 @@ const Upcomingdrops = ({img}) => {
     <>    
      <div className='md:grid grid-cols-2 w-[80%] mx-auto mt-[10%]' >
         <div className='bg-center bg-cover h-80 ' style = {{ backgroundImage : `url(${img})`}}>
-            <div className=' md:grid grid-cols-2 bg-white bg-opacity-25 mx-auto md:mt-[35%] w-[80%] p-4 rounded-sm'>
+            <div className=' md:grid grid-cols-2 bg-white bg-opacity-25 mx-auto md:mt-[25%] w-[80%] p-4 rounded-sm hover:bg-opacity-50'>
                <div className='flex flex-col text-white text-left pt-[3%] '>
                   <p className='text-sm'>Time renmaining</p>
                   <p className='text-2xl mt-[3%]'>06 hrs : 45 mins : 22s</p>
@@ -22,7 +22,7 @@ const Upcomingdrops = ({img}) => {
         </div>
         <div className='text-left'>
            <div className='mt-[20px] md:ml-[50px] md:mt-0'> 
-              <button className = "border bg-[#4693ED] px-4 py-2 rounded-lg text-white ">Upcoming</button>
+              <button className = "border bg-[#4693ED] px-4 py-2 rounded-lg text-white hover:bg-opacity-25">Upcoming</button>
               <p>November 21 at 11 am WAT</p>
               <p className='text-4xl font-bold my-3'>  Eyo : Eko For Show</p>
               <p className='py-4 text-[#616161]'>Lorem ipsum dolor sit amet consectetur. Amet<br/> odio a aenean quis vitae tempus. Sed nunc <br/> tempus aliquet lectus ut vulputate.</p>
@@ -32,7 +32,7 @@ const Upcomingdrops = ({img}) => {
                 <p className='text-[#006CA2] ml-2'> Aliya Minat </p>
               </p>
               
-              <p className='pt-2'>Get notified</p>
+              <p className='pt-2 text-[#4693ED] hover:underline'>Get notified</p>
               
            </div>
           

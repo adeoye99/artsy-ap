@@ -42,7 +42,7 @@ const PopularCreators = ({img , theme , creator , date, highest, currentbid }) =
                 <p className='font-bold '>{currentbid}</p>
               </div>
              <div className='flex justify-center align-center'>
-                <button className='border text-white bg-[#00008B] px-5 py-2 mx-auto w-[80%] rounded-lg'>Place Bid</button>
+                <button className='border text-white bg-[#00008B] px-5 py-2 mx-auto w-[80%] rounded-lg hover:bg-opacity-25'>Place Bid</button>
              </div>
             </div>
           </div>
