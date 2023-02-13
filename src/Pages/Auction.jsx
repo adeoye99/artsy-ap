@@ -13,14 +13,14 @@ const Auction = () => {
   <>
     <div className='pl-[5%] w-full'>
         <p className='text-left text-xl mt-[5%] mb-[5%] font-semibold'>Here’s an overview of products actively on auction, explore!</p>
-
+       <div className='mx-auto w-[100%]'>
         <Carousel
         arrows = {false}
            additionalTransfrom={0}
           //  responsive = {}
           autoPlaySpeed={3000}
-          centerMode={false}
-          className=""
+          // centerMode={true}
+          className="w-[100%] "
             containerClass="container"
         
             dotListClass=""
@@ -36,12 +36,17 @@ const Auction = () => {
            renderButtonGroupOutside={false}
            renderDotsOutside={false}
            responsive={{
+            superLargeDesktop: {
+              // the naming can be any, depends on you.
+              breakpoint: { max: 4000, min: 3000 },
+              items: 5
+            },
     desktop: {
       breakpoint: {
         max: 3000,
         min: 1024
       },
-      items: 3,
+      items: 2,
       partialVisibilityGutter: 40
     },
     mobile: {
@@ -77,6 +82,7 @@ const Auction = () => {
              <Sliderproduct/>
              <Sliderproduct/>
           </Carousel>
+          </div> 
         </div>
  <div className='w-[90%] mx-auto'>
     <p className='md:text-left mt-[5%] text-2xl pl-[14%] font-semibold'>Top bids from popular Creator</p>
