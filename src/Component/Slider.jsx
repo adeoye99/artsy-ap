@@ -35,7 +35,7 @@ const Slider = () =>{
                       <div className="flex items-center justify-center" > 
                           <h1 className="text-white text-[60px]">01</h1>
                        </div>
-                       <div className="pl-2 md:col-span-4 text-white text-left items-end text-lg mt-[60px] ">
+                       <div className="md:pl-2 md:col-span-4 text-white text-left items-end text-lg md:mt-[60px] ">
                            <h1 className="text-white text-bellefair">MONALISA REDEFINED <br/> IN STYLE </h1>
                            <p>Start on : 08:00 GTS . Monday </p>
                            <p>GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.</p>

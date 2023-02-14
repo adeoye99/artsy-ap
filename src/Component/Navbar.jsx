@@ -127,11 +127,15 @@ const Navbar = () => {
         
             />
         </div>
+        <Link to = "shopping">
         <div>
-            <AiOutlineShoppingCart
-              size = "25px"
-           />
+          
+              <AiOutlineShoppingCart
+                 size = "25px"
+               />
+         
         </div>
+        </Link>
         <div>
            <HiOutlineBell
              size = "25px"
