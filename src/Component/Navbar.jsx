@@ -74,10 +74,10 @@ const Navbar = () => {
   return (
     <>
     <div className='grid grid-cols-3 h-[80px] bg-white w-full z-10000'>
-        <div className=' m-auto w-2'>
-            <p className='z-1000 md:font-bold text-[23px] z-200'>ARTSY</p>
+        <div className='m-auto w-2'>
+            <p className='z-1000 mx-[70px] w-20 md:font-bold text-[23px] z-200'>ARTSY</p>
         </div>
-        <div onClick = {()=>{setOpen(!open)}} className = "absolute z-50 right-4 top-6 md:hidden">
+        <div onClick = {()=>{setOpen(!open)}} className = "absolute z-50 left-4 top-6 md:hidden">
           {
             open ?
             <HiOutlineXMark
@@ -119,8 +119,8 @@ const Navbar = () => {
          }
          </li>
        </ul>
-       <div className = "hidden md:grid grid-cols-3 items-center mx-auto gap-7" >
-        <div >
+       <div className = "flex absolute right-4 top-6 md:grid grid-cols-3 items-center mx-auto gap-7" >
+        <div className='hidden md:visible'>
            <FiSearch 
              style = {searchStyle}
              size = "25px"
