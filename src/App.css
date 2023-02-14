@@ -3,9 +3,21 @@
 @tailwind utilities;
 
 
-/* body{
-  overflow: hidden;
-} */
+html,body{
+  overflow-x : hidden;
+  margin: 0;
+
+  
+  
+}
+*{
+  @media only screen and (max-width:768px){
+    overflow: hidden;
+  
+  
+  }
+}
+
 
 
 .scrollbar-hide::-webkit-scrollbar {

@@ -17,7 +17,7 @@ const Hero = () => {
     </div>
    
       <div className='flex gap-3 mt-[100px] overflow-x-auto whitespace-nowrap scrollbar-hide md:scrollbar-default'>
-        <img className='h-[250px] w-50 my-auto' src = { pic3 } alt = "pics"/>
+        <img className='h-[250px] w-90 my-auto' src = { pic3 } alt = "pics"/>
         <img className='h-[350px] w-25 my-auto' src = { pic2} alt = "pics"/>
         <img className='h-[350px] w-25 ' src = { pic1 } alt = "pics"/>
         <img className='h-[350px] w-25 my-2' src = { pic4 } alt = "pics"/>
