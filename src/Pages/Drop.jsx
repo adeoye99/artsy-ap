@@ -4,6 +4,7 @@ import upcoming1 from "../assets/Images/upcomingdropimg1.png"
 import upcoming2 from "../assets/Images/upcomingdropimg2.png"
 import upcoming3 from "../assets/Images/upcomingdropimg3.png"
 import upcoming4 from "../assets/Images/upcomingdropimg4.png"
+import { ListItemText } from "@mui/material"
 
 
 
@@ -11,18 +12,22 @@ import upcoming4 from "../assets/Images/upcomingdropimg4.png"
 const Upcomingdrop = [
 
     {
+      id: 1,
       img : upcoming1
 
     },
     {
+      id: 2,
       img : upcoming2
 
     },
     {
+      id: 3,
       img: upcoming3
 
     },
     {
+      id: 4,
        img: upcoming4
 
     }
@@ -43,6 +48,7 @@ const Drop = () =>{
                     Upcomingdrop.map((item)=>{
                         return(
                             <Upcomingdrops
+                              key = {item.id}
                               img = {item.img}
                    
                              />
