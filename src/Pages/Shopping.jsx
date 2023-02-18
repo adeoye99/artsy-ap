@@ -10,16 +10,8 @@ function Shopping() {
   return (
     <>
       <div>
-      
+    
         <Shoppingnavbar/>
-        <Routes>
-           <Route path = "/shoppingcart" element = {<ShoppingCart/>}/>
-           <Route path = "/shoppingdetails" element = {<ShoppingDetails/>}/>
-           <Route path = "/paymentdetails" element = {<PaymentDetails/>}/> 
-        </Routes>
-        
-      
-      
       </div>
    </>
   )
