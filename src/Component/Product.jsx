@@ -13,7 +13,7 @@ const Product = ({title ,img , about}) => {
             <img className='float-right' src = {product1}/>
         </div>
           <div data-aos="fade-left" className=' text-left w-full md:text-left mr-[190px] md:px-[80px]'>
-            <h1 className='text-[10px] w-full flex md:font-semibold text-3xl' >The Boolean Egyptian</h1>
+            <h1 className='text-[30px] w-full flex md:font-semibold md:text-3xl' >The Boolean Egyptian</h1>
             <p className='text-[20px] flex w-50 mt-3 md:mt-[50px] text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
             <div>
               <div>
@@ -55,8 +55,8 @@ const Product = ({title ,img , about}) => {
             <img className='float-right' src = {product3}/>
           </div>
           <div className='w-full md:text-left mr-[190px] md:px-[80px]'>
-            <h1 className='pl-3 text-[10px] w-full flex md:font-semibold text-3xl' >The Boolean Egyptian</h1>
-            <p className='pl-3 text-left text-sm flex w-50 md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
+            <h1 className='pl-3 text-[30px] w-full flex md:font-semibold text-3xl' >The Boolean Egyptian</h1>
+            <p className='pl-3 text-left text-[20px] flex w-50 md:mt-[50px] margin-top text-[20px]' >Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit ut aliquam, purus sit amet luctus venenatis,<br/> lectus magna fringilla urna, porttitor rhoncus dolor pur</p>
             <div>
               <div>
 
