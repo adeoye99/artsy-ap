@@ -105,7 +105,7 @@ const Navbar = () => {
         }
        </div> 
           {/* mobile navbar */}
-       <ul className = {`h-full w-[100%] fixed absolute bg-white duration-500 z-90000000000000 md:hidden ${ open ? "left-0" : "left-[-100%]" } `}>
+       <ul className = {`h-full w-[100%] fixed absolute bg-white duration-500 z-[100%] md:hidden ${ open ? "left-0" : "left-[-100%]" } `}>
          <li onClick = {() => {setOpen(!open)}} className=' hover:bg-gray-100'>
           {
            NavLinkdetails.map((item)=>{

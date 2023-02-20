@@ -85,7 +85,7 @@ const Auction = () => {
           </div> 
         </div>
  <div className='w-[90%] mx-auto'>
-    <p className='md:text-left mt-[5%] text-2xl pl-[14%] font-semibold'>Top bids from popular Creator</p>
+    <p className='md:text-left mt-[5%] text-2xl pl-[5%] font-semibold'>Top bids from popular Creator</p>
     <div className='md:grid grid-cols-2 mt-[3%] '>
        <div >
        <PopularCreators

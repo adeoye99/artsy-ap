@@ -181,7 +181,7 @@ const Marketplace = () =>{
                         </select>
                 </div>
             </div>
-            <div className="w-[100%] col-span-6 md:col-span-4 mx-auto mt-4 pt-4 bg-gray-100 flex-1 overflow-hidden overflow-y-scroll">
+            <div className="w-[100%] col-span-6 md:col-span-4 mx-auto mt-4 pt-4 bg-gray-100 flex-1 overflow-hidden overflow-y-scroll scrollbar-hide md:scrollbar-default">
                
                 <input
                    
