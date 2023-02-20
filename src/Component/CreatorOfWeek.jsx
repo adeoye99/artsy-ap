@@ -20,7 +20,6 @@ const CreatorOfWeek = () => {
                <li>Lifestyle</li>
                <li>Blueprint</li>
             </ul>       
-
         </div>
     </>
   )

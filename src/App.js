@@ -56,12 +56,15 @@ function App() {
            <Route path= "/" element ={<Home/>}/>
            <Route path= "/auction" element ={<Auction/>}/>
            <Route path= "/drop" element ={<Drop/>}/>
-           <Route path="/marketplace" element={<Marketplace/>}>
-                  <Route index element={<ShoppingCart />}/>
-                  <Route path="shoppingdetails" element={<ShoppingDetails />} />
-                  <Route path = "paymentDetails" element= { <PaymentDetails />}/>
-           </Route> 
-           <Route path = "/shopping" element = {<Shopping/>}/> 
+           <Route path="/marketplace" element={<Marketplace/>}/>
+                  
+           
+           <Route path = "/shopping" element = {<Shopping/>}>
+              <Route index element={<ShoppingCart />}/>
+              <Route path="shoppingdetails" element={<ShoppingDetails />} />
+             <Route path = "paymentDetails" element= { <PaymentDetails />}/>
+           </Route>
+               
         </Routes>
         <Footer/>
       </Router>

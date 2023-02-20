@@ -10,10 +10,12 @@ import Subscribe from '../Component/Subscribe';
 const OptionDetails = [
 
   {
+     id: 1,
      name:  "Explore Marketplace"
     
   },
   {
+     id: 2,
      name : "See Aunction"
 
 
@@ -30,6 +32,7 @@ const Home = () => {
            OptionDetails.map((item) =>{
             return (
             <Options
+              key = {item.id}
               name =  {item.name}
             
             />
