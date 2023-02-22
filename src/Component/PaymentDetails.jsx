@@ -8,10 +8,7 @@ const PaymentDetails = () => {
        <h1>PaymentDetails</h1>
        <h1>PaymentDetails</h1>
        <h1>PaymentDetails</h1>
-       <h1>PaymentDetails</h1>
-       <h1>PaymentDetails</h1>
-       <h1>PaymentDetails</h1>
-       <h1>PaymentDetails</h1>
+       >
        
        
         
