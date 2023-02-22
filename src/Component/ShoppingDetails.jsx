@@ -10,11 +10,7 @@ const ShoppingDetails = () => {
         <h1>ShoppingDetails</h1>
         <h1>ShoppingDetails</h1>
         <h1>ShoppingDetails</h1>
-        <h1>ShoppingDetails</h1>
-        <h1>ShoppingDetails</h1>
-        <h1>ShoppingDetails</h1>
-        <h1>ShoppingDetails</h1>
-        <h1>ShoppingDetails</h1>
+        
     </div>
   )
 }
