@@ -5,8 +5,7 @@ const ShoppingDetails = () => {
     <div>
         <h1>ShoppingDetails</h1>
         <h1>ShoppingDetails</h1>
-        <h1>ShoppingDetails</h1>
-        <h1>ShoppingDetails</h1>
+       
         
         
     </div>
