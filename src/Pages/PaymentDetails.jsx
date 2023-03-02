@@ -6,11 +6,7 @@ const PaymentDetails = () => {
         <h1>Payment Details</h1> 
         <h1>Payment Details</h1>
         <h1>Payment Details</h1>
-        <h1>Payment Details</h1>
-        <h1>Payment Details</h1>
-        <h1>PaymentDetails</h1>
-        <h1>PaymentDetails</h1>
-        <h1>PaymentDetails</h1>
+       
         <h1>PaymentDetails</h1>
     </div>
   )
