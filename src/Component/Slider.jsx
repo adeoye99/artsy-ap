@@ -38,7 +38,7 @@ const Slider = () =>{
                        <div className="md:pl-2 md:col-span-4 text-white text-left items-end text-lg md:mt-[60px] ">
                            <h1 className="text-white text-bellefair">MONALISA REDEFINED <br/> IN STYLE </h1>
                            <p>Start on : 08:00 GTS . Monday </p>
-                           <p>GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.</p>
+                           <p>GET EXCLUSIVE VIEWG OF CONTEMPORARY ART AND CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.</p>
                        </div>
                    </div>
 
