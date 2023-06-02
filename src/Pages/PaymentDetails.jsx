@@ -5,8 +5,8 @@ const PaymentDetails = () => {
     <div>
         <h1>Payment Details</h1> 
         <h1>Payment Details</h1>
-        
-       
+        <h1>Payment Details</h1>
+        <h1>Payment Details</h1>
         
     </div>
   )
